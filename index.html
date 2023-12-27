@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="quiniela.js"></script>
+    <link rel="stylesheet" href="quiniela.css">
+    <title>quiniela</title>
+</head>
+<body>
+    <h1>Quiniela</h1>
+    <p>Selecciona los números haciendo click sobre las celdas o escribiendo los números. Los números deben estar comprendidos entre 1 y 49 separados por comas(,)</p>
+
+    <form>
+        <div class="oculto" id="contenedorMensaje">
+            <p id="mensaje">...</p>
+        </div>
+
+        <label for="numeros">Selección rápida (12,30,42,...): </label>
+        <input type="text" name="numeros" id="numeros" placeholder="ej: 12,30,42">
+        <input type="button" value="seleccionar" id="seleccionar">
+        <input type="button" value="añadir" id="añadir">
+        <input type="reset" value="resetear" id="resetear">
+    </form>
+    <div id="contenedorTabla"></div>
+    <p id="numSeleccionados">Números seleccionados: </p>
+
+    <p>Guarda y recupera la quiniela actual, o introduce un nombre para guardar y recuperar quinielas diferentes:</p>
+    <form id="formCookie">
+        
+        <label for="nombreCookie">Nombre: </label>
+        <input type="text" name="nombreCookie" id="nombreCookie" placeholder="nombre">
+        <input type="button" name="cargar" id="cargar" value="cargar">
+        <input type="button" name="guardar" id="guardar" value="guardar">
+    </form>
+
+</body>
+</html>
